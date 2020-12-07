@@ -1,15 +1,24 @@
-$primary:#0275d8;
-$success:#5cb85c;
-$info:#0070c9;
-$danger:#d9534f;
-$muted:#fafafa;
-$white:white;
-$black:black;
-$dark-grey:#313131;
-$grey:#ccc;
+$yellow:#FCA311;
+$black:#000000;
+$blue:#14213D;
+$platinum:#E5E5E5;
+$white:#FFFFFF;
+
 
 
 $columns:12;
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e5e5e5;
+}
 
 .container {
     display: grid;
@@ -31,27 +40,20 @@ $columns:12;
         }
     }
 
-}
-
-.mt-md-#{$i}{
-    @media(min-width:768px) and (max-width: 992px){
-        margin-top: #{$i}em;
+    .mt-md-#{$i}{
+        @media(min-width:768px) and (max-width: 992px){
+            margin-top: #{$i}em;
+        }
     }
-}
-
-.mb-md-#{$i}{
-    @media(min-width:768px) and (max-width: 992px){
-        margin-bottom: #{$i}em;
+    
+    .mb-md-#{$i}{
+        @media(min-width:768px) and (max-width: 992px){
+            margin-bottom: #{$i}em;
+        }
     }
+
 }
 
-.bg-dark-grey {
-    background-color: $dark-grey;
-}
-
-.bg-grey {
-    background-color: $grey;
-}
 
 .flex-this-start {
     display: flex;
@@ -61,6 +63,43 @@ $columns:12;
 
 .flex-this-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
+}
+
+ul {
+    list-style: none;
+    color: $platinum;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+
+}
+
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-platinum {
+    background-color: $platinum;
+}
+
+.bg-white {
+    background-color: $white;
 }
