@@ -1,343 +1,67 @@
-h1 {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: 'Roboto', monospace;
+  src: url(fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #e5e5e5;
+  font-family: "Roboto", monospace;
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  margin: 0 auto;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: .5em;
-}
-
-.col-1 {
-  grid-column: span 1;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-1 {
-    grid-column: span 1;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-1 {
-    margin-top: 1em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-1 {
-    margin-bottom: 1em;
-  }
-}
-
-.col-2 {
-  grid-column: span 2;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-2 {
-    grid-column: span 2;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-2 {
-    margin-top: 2em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-2 {
-    margin-bottom: 2em;
-  }
-}
-
-.col-3 {
-  grid-column: span 3;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-3 {
-    grid-column: span 3;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-3 {
-    margin-top: 3em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-3 {
-    margin-bottom: 3em;
-  }
-}
-
-.col-4 {
-  grid-column: span 4;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-4 {
-    grid-column: span 4;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-4 {
-    margin-top: 4em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-4 {
-    margin-bottom: 4em;
-  }
-}
-
-.col-5 {
-  grid-column: span 5;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-5 {
-    grid-column: span 5;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-5 {
-    margin-top: 5em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-5 {
-    margin-bottom: 5em;
-  }
-}
-
-.col-6 {
-  grid-column: span 6;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-6 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-6 {
-    margin-top: 6em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-6 {
-    margin-bottom: 6em;
-  }
-}
-
-.col-7 {
-  grid-column: span 7;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-7 {
-    grid-column: span 7;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-7 {
-    margin-top: 7em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-7 {
-    margin-bottom: 7em;
-  }
-}
-
-.col-8 {
-  grid-column: span 8;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-8 {
-    grid-column: span 8;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-8 {
-    margin-top: 8em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-8 {
-    margin-bottom: 8em;
-  }
-}
-
-.col-9 {
-  grid-column: span 9;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-9 {
-    grid-column: span 9;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-9 {
-    margin-top: 9em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-9 {
-    margin-bottom: 9em;
-  }
-}
-
-.col-10 {
-  grid-column: span 10;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-10 {
-    grid-column: span 10;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-10 {
-    margin-top: 10em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-10 {
-    margin-bottom: 10em;
-  }
-}
-
-.col-11 {
-  grid-column: span 11;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-11 {
-    grid-column: span 11;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-11 {
-    margin-top: 11em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-11 {
-    margin-bottom: 11em;
-  }
-}
-
-.col-12 {
-  grid-column: span 12;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .col-sm-12 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mt-md-12 {
-    margin-top: 12em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .mb-md-12 {
-    margin-bottom: 12em;
-  }
-}
-
-.flex-this-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.flex-this-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+.nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 ul {
   list-style: none;
-  color: #E5E5E5;
   padding: 0;
 }
 
-a {
-  color: inherit;
+.nav-link {
+  color: #E5E5E5;
   text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 1.5em;
+  padding: 0.5rem;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
-.logo {
-  font-weight: bold;
+.nav-link:hover {
+  color: #FCA311;
 }
 
-.bg-yellow {
-  background-color: #FCA311;
+.nav-logo {
+  color: #E5E5E5;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 0.5rem;
 }
 
-.bg-black {
-  background-color: #000000;
+.nav {
+  margin: 0;
 }
 
-.bg-blue {
+.nav-dark {
   background-color: #14213D;
-}
-
-.bg-platinum {
-  background-color: #E5E5E5;
-}
-
-.bg-white {
-  background-color: #FFFFFF;
+  color: #E5E5E5;
 }
 /*# sourceMappingURL=styles.css.map */
