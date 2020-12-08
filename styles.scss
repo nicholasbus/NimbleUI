@@ -25,48 +25,37 @@ body {
 
 .nav {
     flex-wrap: nowrap;
+    
 }
 
 
 
-// @for $i from 1 through $columns {
-//     .flex-#{$i} {
-//         flex-grow: $i;
-//     }
+@for $i from 1 through $columns {
+    .flex-#{$i} {
+        flex-grow: $i;
+    }
 
 
-//     @media(min-width: 576px) and (max-width:768px){
-//         .col-sm-#{$i}{
-//             flex-grow: $i;
-//         }
-//     }
+    @media(min-width: 576px) and (max-width:768px){
+        .col-sm-#{$i}{
+            flex-grow: $i;
+        }
+    }
 
-//     .mt-md-#{$i}{
-//         @media(min-width:768px) and (max-width: 992px){
-//             margin-top: #{$i}em;
-//         }
-//     }
+    .mt-md-#{$i}{
+        @media(min-width:768px) and (max-width: 992px){
+            margin-top: #{$i}em;
+        }
+    }
     
-//     .mb-md-#{$i}{
-//         @media(min-width:768px) and (max-width: 992px){
-//             margin-bottom: #{$i}em;
-//         }
-//     }
+    .mb-md-#{$i}{
+        @media(min-width:768px) and (max-width: 992px){
+            margin-bottom: #{$i}em;
+        }
+    }
 
-// }
+}
 
-
-// .flex-this-start {
-//     display: flex;
-//     justify-content: flex-start;
-//     align-content: flex-start;
-// }
-
-// .flex-this-nav {
-//     display: flex;
-//     justify-content: space-evenly;
-//     align-content: center;
-// }
 
 ul {
     list-style: none;
@@ -82,6 +71,30 @@ ul {
     align-content: space-between;
     flex-basis: auto;
     align-self: center;
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+
+}
+
+.burger {
+    display: none !important;
+    
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {
+        display: inline-block;
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) {
+        display: inline-block;
+    }
 }
 
 .nav-link:hover {
@@ -100,6 +113,10 @@ ul {
 
 .nav {
     margin: 0;
+
+
+    
+
 }
 
 .nav-dark {
