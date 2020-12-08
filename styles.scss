@@ -85,15 +85,18 @@ ul {
 
 .burger {
     display: none !important;
-    
-    // Medium devices (tablets, less than 992px)
-    @media (max-width: 991.98px) {
-        display: inline-block;
+    color: inherit;
+    margin-left: calc(35% - 60px);
+    align-self: center;
+    font-size: 2em;
+
+    @media (max-width: 575.98px) {
+        display: inline-block !important;
     }
 
-    // Large devices (desktops, less than 1200px)
-    @media (max-width: 1199.98px) {
-        display: inline-block;
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+        display: inline-block !important;
     }
 }
 
@@ -113,10 +116,6 @@ ul {
 
 .nav {
     margin: 0;
-
-
-    
-
 }
 
 .nav-dark {

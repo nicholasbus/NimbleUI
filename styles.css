@@ -370,17 +370,23 @@ ul {
 
 .burger {
   display: none !important;
+  color: inherit;
+  margin-left: calc(35% - 60px);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2em;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .burger {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .burger {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
