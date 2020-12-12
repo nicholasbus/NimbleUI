@@ -127,33 +127,6 @@ ul {
     color: $platinum;
 }
 
-@for $i from 1 through $marginems {
-    .mt-#{$i} {
-        margin-top: #{$i}em;
-    }
-}
-
-@for $i from 1 through $marginems {
-    .mr-#{$i} {
-        margin-right: #{$i}em;
-    }
-}
-
-@for $i from 1 through $marginems {
-    .mb-#{$i} {
-        margin-bottom: #{$i}em;
-    }
-}
-
-@for $i from 1 through $marginems {
-    .ml-#{$i} {
-        margin-left: #{$i}em;
-    }
-}
-
-#sec {
-    border: 1px solid black;
-}
 
 // custom height and width
 @for $i from 1 through $full {
@@ -182,54 +155,54 @@ ul {
     }
 
     // padding
-    .p-top-em {
+    .p-top-em-#{$i} {
         padding-top: #{$i}em;
     }
-    .p-right-em {
+    .p-right-em-#{$i} {
         padding-right: #{$i}em;
     }
-    .p-bottom-em {
+    .p-bottom-em-#{$i} {
         padding-bottom: #{$i}em;
     }
-    .p-left-em {
+    .p-left-em-#{$i} {
         padding-left: #{$i}em;
     }
-    .p-top-rem {
+    .p-top-rem-#{$i} {
         padding-top: #{$i}rem;
     }
-    .p-right-rem {
+    .p-right-rem-#{$i} {
         padding-right: #{$i}rem;
     }
-    .p-bottom-rem {
+    .p-bottom-rem-#{$i} {
         padding-bottom: #{$i}rem;
     }
-    .p-left-rem {
+    .p-left-rem-#{$i} {
         padding-left: #{$i}em;
     }
 
     // margin
-    .m-top-em {
+    .m-top-em-#{$i} {
         margin-top: #{$i}em;
     }
-    .m-right-em {
+    .m-right-em-#{$i} {
         margin-right: #{$i}em;
     }
-    .m-bottom-em {
+    .m-bottom-em-#{$i} {
         margin-bottom: #{$i}em;
     }
-    .m-left-em {
+    .m-left-em-#{$i} {
         margin-left: #{$i}em;
     }
-    .m-top-rem {
+    .m-top-rem-#{$i} {
         margin-top: #{$i}rem;
     }
-    .m-right-rem {
+    .m-right-rem-#{$i} {
         margin-right: #{$i}rem;
     }
-    .m-bottom-rem {
+    .m-bottom-rem-#{$i} {
         margin-bottom: #{$i}rem;
     }
-    .m-left-rem {
+    .m-left-rem-#{$i} {
         margin-left: #{$i}em;
     }
 }
