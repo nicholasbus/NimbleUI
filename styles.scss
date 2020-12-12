@@ -11,9 +11,10 @@ $white:#FFFFFF;
 $Roboto: 'Roboto', monospace;
 
 $columns:12;
-$viewheight:100;
-$viewwidth:100;
+$full:100;
 $marginems:1000;
+$percent:100;
+
 
 body {
     margin: 0;
@@ -126,20 +127,6 @@ ul {
     color: $platinum;
 }
 
-// custom vh 
-@for $i from 1 through $viewheight {
-    .vh-#{$i} {
-        height: #{$i}vh;
-    }
-}
-
-// custom vw
-@for $i from 1 through $viewwidth {
-    .vw-#{$i} {
-        width: #{$i}vw;
-    }
-}
-
 @for $i from 1 through $marginems {
     .mt-#{$i} {
         margin-top: #{$i}em;
@@ -168,32 +155,82 @@ ul {
     border: 1px solid black;
 }
 
-// a {
-//     color: inherit;
-//     text-decoration: none;
-// }
+// custom height and width
+@for $i from 1 through $full {
+    //height and width
+    .vh-#{$i} {
+        height: #{$i}vh;
+    }
+    .vw-#{$i} {
+        width: #{$i}vw;
+    }
 
-// .logo {
-//     font-weight: bold;
+    .h-em-#{$i} {
+        height: #{$i}em;
+    }
 
-// }
+    .w-rem-#{$i} {
+        width: #{$i}rem;
+    }
 
-// .bg-yellow {
-//     background-color: $yellow;
-// }
+    .h-rem-#{$i} {
+        height: #{$i}rem;
+    }
 
-// .bg-black {
-//     background-color: $black;
-// }
+    .w-rem-#{$i} {
+        width: #{$i}rem;
+    }
 
-// .bg-blue {
-//     background-color: $blue;
-// }
+    // padding
+    .p-top-em {
+        padding-top: #{$i}em;
+    }
+    .p-right-em {
+        padding-right: #{$i}em;
+    }
+    .p-bottom-em {
+        padding-bottom: #{$i}em;
+    }
+    .p-left-em {
+        padding-left: #{$i}em;
+    }
+    .p-top-rem {
+        padding-top: #{$i}rem;
+    }
+    .p-right-rem {
+        padding-right: #{$i}rem;
+    }
+    .p-bottom-rem {
+        padding-bottom: #{$i}rem;
+    }
+    .p-left-rem {
+        padding-left: #{$i}em;
+    }
 
-// .bg-platinum {
-//     background-color: $platinum;
-// }
+    // margin
+    .m-top-em {
+        margin-top: #{$i}em;
+    }
+    .m-right-em {
+        margin-right: #{$i}em;
+    }
+    .m-bottom-em {
+        margin-bottom: #{$i}em;
+    }
+    .m-left-em {
+        margin-left: #{$i}em;
+    }
+    .m-top-rem {
+        margin-top: #{$i}rem;
+    }
+    .m-right-rem {
+        margin-right: #{$i}rem;
+    }
+    .m-bottom-rem {
+        margin-bottom: #{$i}rem;
+    }
+    .m-left-rem {
+        margin-left: #{$i}em;
+    }
+}
 
-// .bg-white {
-//     background-color: $white;
-// }
